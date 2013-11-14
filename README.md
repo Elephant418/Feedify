@@ -1,9 +1,9 @@
 Feedify
 ======
 
-Feedify transforms any data to a feed in PHP
+Feedify transforms any data to a feed in PHP.
 
-Currently support RSS & SiteMap feed
+Currently support RSS & SiteMap feed.
 
 
 
