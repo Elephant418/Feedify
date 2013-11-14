@@ -1,7 +1,7 @@
 Feedify
 ======
 
-Transform any data to a feed in PHP
+Feedify transforms any data to a feed in PHP
 
 Currently support RSS & SiteMap feed
 
@@ -42,5 +42,5 @@ $writer->output(\Feedify\Writer::SITEMAP_FORMAT);
 Author & Community
 --------
 
-Staq is under [MIT License](http://opensource.org/licenses/MIT).
-It is created and maintained by [Thomas ZILLIOX](http://zilliox.me).
+Feedify is under [MIT License](http://opensource.org/licenses/MIT).
+It is created and maintained by [Thomas ZILLIOX](http://tzi.fr).
