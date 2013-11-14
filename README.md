@@ -30,10 +30,10 @@ $writer->addAttributeFormatter('url', function($article){
   return 'http://example.com/article/'.$article->id;
 });
 
-// Output the my datas as a RSS
+/* Output */
+// As a RSS
 $writer->output(\Feedify\Writer::RSS_FORMAT);
-
-// or as a SiteMap
+// Or as a SiteMap
 $writer->output(\Feedify\Writer::SITEMAP_FORMAT);
 ```
 
