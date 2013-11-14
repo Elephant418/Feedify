@@ -1,8 +1,8 @@
 <?php
 
-namespace Blogartiq\Front;
+namespace Feedify;
 
-class Feedify
+class Writer
 {
 
 
