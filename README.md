@@ -20,12 +20,13 @@ $writer->siteURL = 'http://example.com/url/to/my/blog';
 $writer->feedURL = 'http://example.com/url/to/my/blog/feed';
 
 /* Add items & formatters */
-$writer->items = $fetchMyData();
-// The date attribute could be used directly
+// Add data from your database
+$writer->addItems($myData);
+// The 'date' attribute could be used directly
 $writer->addAttribute('date');
-// The title corresponds to my 'name' attribute
+// The 'title' attribute corresponds to my 'name' attribute
 $writer->addAttributeMap('title', 'name');
-// The url needs a specific formatter
+// The 'url' attribute needs a specific formatter
 $writer->addAttributeFormatter('url', function($article){
   return 'http://example.com/article/'.$article->id;
 });
