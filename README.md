@@ -13,13 +13,13 @@ Code example
 ```php
 $writer = new \Feedify\Writer();
 
-// Add global description
+/* Add global description */
 $writer->title = 'Title of my blog';
 $writer->description = 'Description of my blog';
 $writer->siteURL = 'http://example.com/url/to/my/blog';
 $writer->feedURL = 'http://example.com/url/to/my/blog/feed';
 
-// Add items & formatters
+/* Add items & formatters */
 $writer->items = $fetchMyData();
 // The date attribute could be used directly
 $writer->addAttribute('date');
@@ -27,13 +27,13 @@ $writer->addAttribute('date');
 $writer->addAttributeMap('title', 'name');
 // The url needs a specific formatter
 $writer->addAttributeFormatter('url', function($article){
-		return 'http://example.com/article/$article->id;
+  return 'http://example.com/article/'.$article->id;
 });
 
 // Output the my datas as a RSS
 $writer->output(\Feedify\Writer::RSS_FORMAT);
 
-// Output the my datas as a SiteMap
+// or as a SiteMap
 $writer->output(\Feedify\Writer::SITEMAP_FORMAT);
 ```
 
