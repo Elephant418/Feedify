@@ -1,0 +1,24 @@
+{
+    "name": "pixel418/feedify",
+    "type": "library",
+    "description": "Feedify transforms any data to a feed in PHP",
+    "keywords": [ "lib" ],
+    "homepage": "https://github.com/Pixel418/Feedify",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas ZILLIOX",
+            "homepage": "http://tzi.fr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.*",
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Feedify": ""
+        }
+    }
+}
