@@ -44,4 +44,5 @@ Author & Community
 --------
 
 Feedify is under [MIT License](http://opensource.org/licenses/MIT).
+
 It is created and maintained by [Thomas ZILLIOX](http://tzi.fr).
